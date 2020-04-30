@@ -11,6 +11,7 @@ Included binaries:
 
 - [mdbook](https://crates.io/crates/mdbook)
 - [mdbook-linkcheck](https://crates.io/crates/mdbook-linkcheck)
+- [mdbook-mermaid](https://crates.io/crates/mdbook-mermaid)
 
 ## License
 

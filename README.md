@@ -1,7 +1,7 @@
 # mdbook-docker-image
 
 [
-  ![Docker Build Status](https://img.shields.io/docker/build/michaelfbryan/mdbook-docker-image)
+  ![Docker Pulls](https://img.shields.io/docker/pulls/michaelfbryan/mdbook-docker-image)
   ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/michaelfbryan/mdbook-docker-image/latest)
 ][image]
 

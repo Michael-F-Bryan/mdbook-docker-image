@@ -16,6 +16,9 @@ Included binaries:
 - [mdbook-plantuml](https://crates.io/crates/mdbook-plantuml) - 0.5.0
 - [mdbook-open-on-gh](https://crates.io/crates/mdbook-open-on-gh) - 1.1.1
 
+Docker hub will automatically generate a new image and tag it with `latest`
+whenever new commits are pushed to this GitHub repo.
+
 ## License
 
 This project is licensed under either of

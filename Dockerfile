@@ -14,7 +14,9 @@ RUN cargo install mdbook --vers ${MDBOOK_VERSION} --verbose
 RUN cargo install mdbook-linkcheck --vers ${MDBOOK_LINKCHECK_VERSION} --verbose
 RUN cargo install mdbook-mermaid --vers ${MDBOOK_MERMAID_VERSION} --verbose
 RUN cargo install mdbook-toc --vers ${MDBOOK_TOC_VERSION} --verbose
-RUN cargo install mdbook-plantuml --vers ${MDBOOK_PLANTUML_VERSION} --verbose
+RUN apt-get update && \
+    apt-get install -y libssl-dev pkg-config && \
+    cargo install mdbook-plantuml --vers ${MDBOOK_PLANTUML_VERSION} --verbose
 RUN cargo install mdbook-open-on-gh --vers ${MDBOOK_OPEN_ON_GH_VERSION} --verbose
 
 # Create the final image

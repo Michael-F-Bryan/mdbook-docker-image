@@ -9,12 +9,12 @@ A docker image with `mdbook` and common plugins.
 
 Included binaries:
 
-- [mdbook](https://crates.io/crates/mdbook) - 0.3.7
-- [mdbook-linkcheck](https://crates.io/crates/mdbook-linkcheck) - 0.5.1
-- [mdbook-mermaid](https://crates.io/crates/mdbook-mermaid) - 0.4.1
-- [mdbook-toc](https://crates.io/crates/mdbook-toc) - 0.4.1
-- [mdbook-plantuml](https://crates.io/crates/mdbook-plantuml) - 0.5.0
-- [mdbook-open-on-gh](https://crates.io/crates/mdbook-open-on-gh) - 1.1.1
+- [mdbook](https://crates.io/crates/mdbook) - 0.4.4
+- [mdbook-linkcheck](https://crates.io/crates/mdbook-linkcheck) - 0.7.1
+- [mdbook-mermaid](https://crates.io/crates/mdbook-mermaid) - 0.6.1
+- [mdbook-toc](https://crates.io/crates/mdbook-toc) - 0.5.1
+- [mdbook-plantuml](https://crates.io/crates/mdbook-plantuml) - 0.7.0
+- [mdbook-open-on-gh](https://crates.io/crates/mdbook-open-on-gh) - 1.3.1
 
 Docker hub will automatically generate a new image and tag it with `latest`
 whenever new commits are pushed to this GitHub repo.

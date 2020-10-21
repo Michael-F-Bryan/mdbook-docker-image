@@ -32,6 +32,9 @@ EXPOSE 3000
 
 COPY --from=build /usr/local/bin/mdbook* /bin/
 
+# Make sure we have certs
+RUN apt-get update && apt-get install -y ca-certificates && rm -rf /var/cache/apt/lists
+
 WORKDIR /data
 VOLUME [ "/data" ]
 

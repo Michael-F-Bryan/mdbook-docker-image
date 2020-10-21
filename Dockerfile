@@ -11,7 +11,8 @@ ARG MDBOOK_OPEN_ON_GH_VERSION="1.3.1"
 ENV CARGO_INSTALL_ROOT /usr/local/
 ENV CARGO_TARGET_DIR /tmp/target/
 
-RUN apt-get update && apt-get install -y libssl-dev pkg-config
+RUN apt-get update && \
+    apt-get install -y libssl-dev pkg-config ca-certificates build-essential make perl gcc libc6-dev
 
 RUN cargo install mdbook --vers ${MDBOOK_VERSION} --verbose
 RUN cargo install mdbook-linkcheck --vers ${MDBOOK_LINKCHECK_VERSION} --verbose

@@ -1,4 +1,4 @@
-FROM rust:1.43.0-slim AS build
+FROM rust:1.46.0-slim AS build
 
 # Version numbers for all the crates we're going to install
 ARG MDBOOK_VERSION="0.4.4"

@@ -9,6 +9,7 @@ ARG MDBOOK_PLANTUML_VERSION="0.7.0"
 ARG MDBOOK_OPEN_ON_GH_VERSION="1.3.1"
 
 ENV CARGO_INSTALL_ROOT /usr/local/
+ENV CARGO_TARGET_DIR /tmp/target/
 
 RUN cargo install mdbook --vers ${MDBOOK_VERSION} --verbose
 RUN cargo install mdbook-linkcheck --vers ${MDBOOK_LINKCHECK_VERSION} --verbose

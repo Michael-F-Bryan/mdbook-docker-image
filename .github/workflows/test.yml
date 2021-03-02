@@ -1,0 +1,13 @@
+name: Test Docker image
+on:
+  push:
+
+jobs:
+  test:
+    name: Build docker image
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v2
+      - name: Build docker image
+        run: docker build -t mdbook:test .

@@ -8,6 +8,7 @@ ARG MDBOOK_TOC_VERSION="0.6.1"
 ARG MDBOOK_PLANTUML_VERSION="0.7.0"
 ARG MDBOOK_OPEN_ON_GH_VERSION="2.0.0"
 ARG MDBOOK_GRAPHVIZ_VERSION="0.0.2"
+ARG MDBOOK_KATEX_VERSION="0.2.8"
 
 ENV CARGO_INSTALL_ROOT /usr/local/
 ENV CARGO_TARGET_DIR /tmp/target/
@@ -22,6 +23,7 @@ RUN cargo install mdbook-toc --vers ${MDBOOK_TOC_VERSION} --verbose
 RUN cargo install mdbook-plantuml --vers ${MDBOOK_PLANTUML_VERSION} --verbose
 RUN cargo install mdbook-open-on-gh --vers ${MDBOOK_OPEN_ON_GH_VERSION} --verbose
 RUN cargo install mdbook-graphviz --vers ${MDBOOK_GRAPHVIZ_VERSION} --verbose
+RUN cargo install mdbook-katex --vers ${MDBOOK_KATEX_VERSION} --verbose
 
 # Create the final image
 FROM ubuntu:20.04

@@ -1,8 +1,8 @@
-FROM rust:1.54.0-slim AS build
+FROM rust:1.57.0-slim AS build
 
 # Version numbers for all the crates we're going to install
-ARG MDBOOK_VERSION="0.4.11"
-ARG MDBOOK_LINKCHECK_VERSION="0.7.4"
+ARG MDBOOK_VERSION="0.4.15"
+ARG MDBOOK_LINKCHECK_VERSION="0.7.6"
 ARG MDBOOK_MERMAID_VERSION="0.8.3"
 ARG MDBOOK_TOC_VERSION="0.7.0"
 ARG MDBOOK_PLANTUML_VERSION="0.7.0"
@@ -37,7 +37,7 @@ EXPOSE 3000
 COPY --from=build /usr/local/bin/mdbook* /bin/
 
 # Make sure we have certs
-RUN apt-get update && apt-get install  --no-install-recommends -y ca-certificates graphviz && rm -rf /var/cache/apt/lists
+RUN apt-get update && apt-get install --no-install-recommends -y ca-certificates graphviz && rm -rf /var/cache/apt/lists
 
 WORKDIR /data
 VOLUME [ "/data" ]

@@ -9,8 +9,8 @@ A docker image with `mdbook` and common plugins.
 
 Included binaries:
 
-- [mdbook](https://crates.io/crates/mdbook) - 0.4.11
-- [mdbook-linkcheck](https://crates.io/crates/mdbook-linkcheck) - 0.7.4
+- [mdbook](https://crates.io/crates/mdbook) - 0.4.15
+- [mdbook-linkcheck](https://crates.io/crates/mdbook-linkcheck) - 0.7.6
 - [mdbook-mermaid](https://crates.io/crates/mdbook-mermaid) - 0.8.3
 - [mdbook-toc](https://crates.io/crates/mdbook-toc) - 0.7.0
 - [mdbook-plantuml](https://crates.io/crates/mdbook-plantuml) - 0.7.0

@@ -1,4 +1,4 @@
-FROM rust:1.57.0-slim AS build
+FROM rust:1.59.0-slim AS build
 
 # Version numbers for all the crates we're going to install
 ARG MDBOOK_VERSION="0.4.15"
@@ -9,6 +9,7 @@ ARG MDBOOK_PLANTUML_VERSION="0.7.0"
 ARG MDBOOK_OPEN_ON_GH_VERSION="2.0.1"
 ARG MDBOOK_GRAPHVIZ_VERSION="0.0.2"
 ARG MDBOOK_KATEX_VERSION="0.2.10"
+ARG MDBOOK_ADMONISH_VERSION="1.4.0"
 
 ENV CARGO_INSTALL_ROOT /usr/local/
 ENV CARGO_TARGET_DIR /tmp/target/
@@ -24,6 +25,7 @@ RUN cargo install mdbook-plantuml --vers ${MDBOOK_PLANTUML_VERSION} --verbose
 RUN cargo install mdbook-open-on-gh --vers ${MDBOOK_OPEN_ON_GH_VERSION} --verbose
 RUN cargo install mdbook-graphviz --vers ${MDBOOK_GRAPHVIZ_VERSION} --verbose
 RUN cargo install mdbook-katex --vers ${MDBOOK_KATEX_VERSION} --verbose
+RUN cargo install mdbook-admonish --vers ${MDBOOK_ADMONISH_VERSION} --verbose
 
 # Create the final image
 FROM ubuntu:20.04

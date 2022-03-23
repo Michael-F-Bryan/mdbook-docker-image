@@ -17,6 +17,7 @@ Included binaries:
 - [mdbook-open-on-gh](https://crates.io/crates/mdbook-open-on-gh) - 2.0.1
 - [mdbook-graphviz](https://crates.io/crates/mdbook-graphviz) - 0.0.2
 - [mdbook-katex](https://crates.io/crates/mdbook-katex) - 0.2.10
+- [mdbook-admonish](https://crates.io/crates/mdbook-admonish) - 1.4.0
 
 Docker hub will automatically generate a new image and tag it with `latest`
 whenever new commits are pushed to this GitHub repo.

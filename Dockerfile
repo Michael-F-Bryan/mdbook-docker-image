@@ -39,6 +39,8 @@ COPY --from=build /usr/local/bin/mdbook* /bin/
 # Make sure we have certs
 RUN apt-get update && apt-get install --no-install-recommends -y ca-certificates graphviz plantuml && rm -rf /var/cache/apt/lists
 
+COPY bin/plantuml /usr/bin/plantuml
+
 WORKDIR /data
 VOLUME [ "/data" ]
 
